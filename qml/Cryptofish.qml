@@ -40,11 +40,24 @@ ApplicationWindow
             fileManager.closing()
         }
 
-    initialPage: Component { PinCodePage { } }
+    initialPage: PinCodePage { id: pinCodePage}
+
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: Orientation.Portrait
     _defaultPageOrientations: Orientation.Portrait
 
+
+    onApplicationActiveChanged: {
+        console.log(applicationActive);
+//        fileManager.closing()
+
+        if (applicationActive == false) {
+            pageStack.clear();
+        }
+        else if (pageStack.currentPage !== pinCodePage) {
+            pageStack.push(Qt.resolvedUrl("pages/PinCodePage.qml"));
+        }
+    }
 }
 
 

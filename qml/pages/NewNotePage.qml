@@ -1,9 +1,8 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-
 Dialog {
     DBManager {
-       id: dbmanager
+        id: dbmanager
     }
 
     onAccepted: {
@@ -36,5 +35,7 @@ Dialog {
                 wrapMode: TextEdit.WordWrap
             }
         }
+
     }
 }
+

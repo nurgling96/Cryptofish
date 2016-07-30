@@ -7,6 +7,7 @@ Dialog {
 
     onAccepted: {
         console.log('Save text')
+        dconsole.log(bmanager.getDataBaseLocation())
         dbmanager.addFile(noteTextField.text)
         noteTextField.text = ""
     }

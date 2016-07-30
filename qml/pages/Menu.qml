@@ -58,7 +58,8 @@ Page {
                 onClicked: {
                     //Lock()
                     console.log('Wanna Exit')
-                    pageStack.replace(Qt.resolvedUrl("PinCodePage.qml"))
+                    console.log(fileManager.getDataBaseLocation())
+                    //pageStack.replace(Qt.resolvedUrl("PinCodePage.qml"))
                 } }
         }
 

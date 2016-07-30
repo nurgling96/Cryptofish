@@ -107,3 +107,15 @@ void FileManager::closing()
 {
     delete passwd;
 }
+
+void FileManager::getDataBaseLocation()
+{
+//    QQmlApplicationEngine engine;
+
+//    QString offlineStoragePath = engine.offlineStoragePath();
+//    engine.rootContext()->setContextProperty("offlineStoragePath", offlineStoragePath);
+
+  //QString buff = engine.offlineStoragePath();
+    emit getPath("");
+    return;
+}

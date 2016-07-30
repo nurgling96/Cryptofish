@@ -2,11 +2,9 @@ import QtQuick 2.0
 import QtQuick.LocalStorage 2.0
 
 Item {
-
     //
     // TODO: использовать base64
     //
-
     function fetchFileById(id) {
         var db = LocalStorage.openDatabaseSync("QtQmlDB", "1.0", "Notes QML SQL");
 

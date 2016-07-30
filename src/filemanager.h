@@ -16,9 +16,12 @@ signals:
     void responseKey(bool answer);
     void passwordChanged(bool answer);
     void fileDecrypted();
+    void getPath(QString path);
 
 public slots:
-//    void getDBLocation(QString path);
+    void getDataBaseLocation();
+//    void encryptDataBase(QString path);
+//    void decryptDataBase(QString path);
 //    void fileRequest(QString name);
     void verification(QString Key);
     void changeKey(QString Key);
